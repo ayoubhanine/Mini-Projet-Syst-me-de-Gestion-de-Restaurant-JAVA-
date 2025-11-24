@@ -1,4 +1,4 @@
-<h1 color="red">ReadMe</h1>
+<h1 style="color: red;">ReadMe</h1>
 
 
 
