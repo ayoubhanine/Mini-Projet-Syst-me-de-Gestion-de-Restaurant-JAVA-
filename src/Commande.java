@@ -30,8 +30,8 @@ private List<Plat> plats ;
 
     public double CalculerTotal(){
         double Total=0;
-        for (int i = 0; i < getCommandes.size(); i++) {
-            Total+=getCommandes.get(i).getPrix();
+        for (int i = 0; i < getPlats().size(); i++) {
+            Total+=getPlats().get(i).getPrix();
 
         }
         return Total;
@@ -84,10 +84,8 @@ private List<Plat> plats ;
     @Override
     public String toString() {
         return "Commande{" +
-                "idCommande=" + idCommande +
+                ", idCommande=" + idCommande +
                 ", date='" + date + '\'' +
-                ", client=" + client +
-                ", serveur=" + serveur +
                 ", plats=" + plats +
                 '}';
     }
