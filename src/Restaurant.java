@@ -7,7 +7,7 @@ public class Restaurant {
     private List<Serveur> serveur;
     private List<Commande> commandes;
 
-    public Restaurant(List<Commande> commandes, List<Plat> menu, String nom, List<Serveur> serveur) {
+    public Restaurant( String nom) {
         this.commandes = new ArrayList<>();
         Menu = new ArrayList<>();
         this.nom = nom;
@@ -60,7 +60,7 @@ public class Restaurant {
     }
     public void afficherCommandes(){
         for (Commande c:commandes){
-            System.out.println("commande "+c);
+            System.out.println("commande :"+c);
         }
     }
     public void AjouterCommande(Commande c){
@@ -77,12 +77,8 @@ public class Restaurant {
                 '}';
     }
 
-    public void enregistrerCommandes(Commande c){
-        for (int i = 0; i < getCommandes().size(); i++) {
-            if(getCommandes().get(i).getIdCommande.equals(c.getIdClent())){
-                System.out.println("les commandes passes :"+getCommandes().get(i));
-            }
-        }
+
+    
 
 
-}}
+}
